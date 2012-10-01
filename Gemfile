@@ -49,5 +49,5 @@ group :production do
   gem 'newrelic_rpm'
 end
 
-gem 'deface', :git => 'git://github.com/railsdog/deface.git'
+gem 'deface', :git => 'git://github.com/spree/deface.git'
 

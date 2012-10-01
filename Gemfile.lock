@@ -10,10 +10,11 @@ GIT
       json (>= 1.5.1)
 
 GIT
-  remote: git://github.com/railsdog/deface.git
-  revision: 48a15618c57470ccdcb597d651ea923e024dd51f
+  remote: git://github.com/spree/deface.git
+  revision: 3728fddf56c02c13c4e56e59fbe913ebbb358471
   specs:
-    deface (0.9.1)
+    deface (1.0.0.rc1)
+      colorize (>= 0.5.8)
       nokogiri (~> 1.5.0)
       rails (~> 3.1)
 
@@ -183,6 +184,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.3.3)
+    colorize (0.5.8)
     culerity (0.2.15)
     database_cleaner (0.8.0)
     devise (2.0.4)
