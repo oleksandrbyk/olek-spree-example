@@ -23,6 +23,7 @@ gem 'tinymce-rails', '>= 3.4.7.0.1'
 gem 'spree_paypal_express',   :git => 'git://github.com/spree/spree_paypal_express.git'
 gem 'spree_active_shipping',  :git => 'git://github.com/spree/spree_active_shipping.git'
 gem 'active_shipping', :git => 'git://github.com/Shopify/active_shipping.git'
+gem 'spree_product_groups', :git => 'git://github.com/spree/spree_product_groups.git'
 
 gem 'spree_rdr_theme', :git => 'git://github.com/spree/spree_rdr_theme.git'
 gem 'capistrano'
