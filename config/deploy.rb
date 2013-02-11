@@ -1,5 +1,3 @@
-$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
-require "rvm/capistrano"
 require "bundler/capistrano"
 # load 'deploy/assets'
 
@@ -23,6 +21,14 @@ set :use_sudo,    false
 
 default_run_options[:pty] = true
 set :ssh_options, { :forward_agent => true }
+
+set :default_environment, {
+  'PATH' => "/usr/local/rvm/gems/ruby-1.8.7-p352/bin:/usr/local/rvm/gems/ruby-1.8.7-p352@global/bin:/usr/local/rvm/rubies/ruby-1.8.7-p352/bin:$PATH",
+  'RUBY_VERSION' => 'ruby 1..8.7',
+  'GEM_HOME'     => '/usr/local/rvm/gems/ruby-1.8.7-p352',
+  'GEM_PATH'     => '/usr/local/rvm/gems/ruby-1.8.7-p352:/usr/local/rvm/gems/ruby-1.8.7-p352@global',
+  'BUNDLE_PATH'  => ''  # If you are using bundler.
+}
 
 
 namespace :foreman do
